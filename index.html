@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale="1.0," user-scalable="0" />
     <title>母鸡母鸡~</title>
     <style>
       * {
@@ -24,18 +24,24 @@
       #navList {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         max-width: 80%;
+        text-align: center;
       }
       #navList > li {
         height: 3rem;
         text-align: center;
         line-height: 3rem;
-        width: 30%;
+        width: 26%;
         background: skyblue;
-        margin: 20px 20px 0 0;
+        margin: 1rem 1rem 0 0;
         border-radius: 10px;
         box-shadow: 2px 2px 5px #000;
         transition: font 0.3s ease-out;
+      }
+
+      #navList > li:nth-child(3n + 0) {
+        margin-right: 0;
       }
 
       #navList > li:hover {
@@ -49,7 +55,7 @@
         left: 50%;
         transform: translateX(-50%);
         height: 2rem;
-        width: 40rem;
+        width: 72%;
         border-radius: 20px;
         outline: none;
         padding: 0 1rem;
